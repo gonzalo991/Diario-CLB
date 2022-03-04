@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{cabecera}}</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link href="assets/css/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+
+<body id="top">
+
+  <!--Barra Superior  -->
+
+  <div class="wrapper row0">
+    <div id="topbar" class="hoc clear">
+
+      <!-- Menú Superior -->
+
+      <div class="fl_left">
+        <ul>
+          <li><i class="fa fa-phone"></i> {{celular}}</li>
+          <li><i class="fa fa-envelope-o"></i> {{email}}</li>
+        </ul>
+      </div>
+      <div class="fl_right">
+        <ul>
+          <li><a href="/"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="/login">Ingreso</a></li>
+          <li><a href="/registro">Registro</a></li>
+          <li><a href="/admin">Administrador</a></li>
+        </ul>
+      </div>
+      <!--Fin del menú superior -->
+    </div>
+  </div>
+
+  <!-- Fin de la barra superior -->
+
+
+  <!-- Imagen de fondo superior -->
+
+  <div class="bgded overlay" style="background-image:url('images/logocortalabocha.jpg');">
+
+    <!-- Fin de imagen de fondo superior -->
+
+    <!-- Inicio Header -->
+
+    <div class="wrapper row1">
+      <header id="header" class="hoc clear">
+
+        <!-- Inicio de Título -->
+
+        <div id="logo" class="fl_left">
+          <h1><a href="/">{{titulo}}</a></h1>
+        </div>
+
+        <!-- Fin de título -->
+
+        <!-- Inicio de navegador -->
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="/">Inicio</a></li>
+            <li><a class="drop" href="seccion.">Secciones</a>
+              <ul>
+                <li><a href="/noticias">Noticias</a></li>
+              </ul>
+            </li>
+            <li><a class="drop" href="servicios.">Servicios</a>
+              <ul>
+                <li><a href="/clima">Clima</a></li>
+              </ul>
+            </li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Fin del navegador -->
+
+      </header>
+
+      <!--Fin header-->
+
+    </div>
+
+    <!-- Inicio Carrusel de secciones -->
+
+    <div id="pageintro" class="hoc clear">
+      <div class="flexslider basicslider">
+        <ul class="slides">
+          <li>
+            <article>
+              <p>{{noticias}}</p>
+              <h3 class="heading">{{enterate}}</h3>
+              <p>{{info}}</p>
+              <footer><a class="btn" href="/noticias">Noticias</a></footer>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p>{{ayudanos}}</p>
+              <h3 class="heading">{{nosinteresa}}</h3>
+              <p>{{entra}}</p>
+              <footer><a class="btn" href="/registro">{{articuloboton}}</a></footer>
+            </article>
+          </li>
+          <li>
+            <article>
+              <p>{{contanos}}</p>
+              <h3 class="heading">{{atentos}}</h3>
+              <p>{{contactate}}</p>
+              <footer><a class="btn" href="/contacto">{{contactoboton}}</a></footer>
+            </article>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Fin del carrusel de secciones -->
+
+    </div>
+  </div>
+
+  <!-- Fin de imagen de fondo superior -->
+
+  <!-- Inicio de vista previo de articulos -->
+
+  <div class="wrapper row3 coloured" style="background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+    <main class="hoc container clear">
+      <!-- main body -->
+      <!-- ################################################################################################ -->
+      <div id="introblocks">
+        <ul class="nospace group">
+          <li class="one_third first">
+            <article>
+              <div>
+                <h6 class="heading">{{periodismo}}</h6>
+                <p>{{descripcion}} [&hellip;]</p>
+              </div>
+              <img src="images/images.jpeg" alt="">
+              <footer><a href="/noticias">{{iraBoton}}</a></footer>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+              <div>
+                <h6 class="heading">{{articulotitulo}}</h6>
+                <p>{{descripcion2}}
+                  [&hellip;]</p>
+              </div>
+              <img src="images/comunicado-importante2999750_999_750.png" alt="">
+              <footer><a href="/articulodeldia">{{iraBoton}}</a></footer>
+            </article>
+          </li>
+          <li class="one_third">
+            <article>
+              <div>
+                <h6 class="heading">{{servicio}}</h6>
+                <p>{{descripcion3}}[&hellip;]
+                </p>
+              </div>
+              <img src="images/depositphotos_31375579-stock-photo-businessman-drawing-a-cloud-computing.jpg" alt="">
+              <footer><a href="/clima">{{iraBoton}}</a></footer>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <!-- Fin de la vista previa de los artículos -->
+
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row4 bgded overlay" style="background-image:url('images/microgonoauris.jpg');">
+    <footer id="footer" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <h3 class="heading">{{titulo2}}</h3>
+      <nav>
+        <ul class="nospace inline pushright uppercase">
+          <li><a href="/home"><i class="fa fa-lg fa-home"></i></a></li>
+          <li><a href="/home">Inicio</a></li>
+          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="/noticias">Noticias</a></li>
+        </ul>
+      </nav>
+      <ul class="faico clear">
+        <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="faicon-instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="faicon-google-plus" href="#"><i class="fa fa-google-plus"></i></a></li>
+        <li><a class="faicon-whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>
+      </ul>
+      <!-- ################################################################################################ -->
+    </footer>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <div class="wrapper row5">
+    <div id="copyright" class="hoc clear">
+      <!-- ################################################################################################ -->
+      <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="">www.clbdiarioodigital.com.ar</a>
+      </p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/"
+          title="Free Website Templates">OS Templates</a></p>
+      <!-- ################################################################################################ -->
+    </div>
+  </div>
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+  <!-- JAVASCRIPTS -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.backtotop.js"></script>
+  <script src="assets/js/jquery.mobilemenu.js"></script>
+  <script src="assets/js/jquery.flexslider-min.js"></script>
+</body>
+
+</html>

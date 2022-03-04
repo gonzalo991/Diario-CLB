@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <title>{{cabecera}}</title>
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+
+    {{>header}}
+
+    <!-- Inicio del Cuerpo de la Sección -->
+
+    <div class="contenedor">
+        <form action="/registro" method="post">
+            <div class="input-group">
+                <div class="contenido">
+                    <span class="input-group-text" id="basic-addon1">Nombre y Apellido</span>
+                    <input type="text" name="nombre_completo" class="form-control" placeholder="Cosme Fulanito"
+                        aria-label="nombre" aria-describedby="basic-addon1" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="contenido">
+                    <span class="input-group-text" id="basic-addon1">E-mail</span>
+                    <input type="email" name="mail_usuario" class="form-control" placeholder="Cosme@Fulanito.com"
+                        aria-label="Email" aria-describedby="basic-addon1" required>
+                </div>
+            </div>
+            <div class="input-group ">
+                <div class="contenido">
+                    <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                    <input type="password" name="clave" class="form-control" placeholder="*******" aria-label="clave"
+                        aria-describedby="basic-addon1" required>
+                </div>
+            </div>
+            <div class="input-group ">
+                <div class="contenido">
+                    <span class="input-group-text" id="basic-addon1">Fecha de Nacimiento</span>
+                    <input type="date" min="1922-02-09" max="2012-02-09" name="fechaNac" class="form-control"
+                        placeholder="dia/mes/año" aria-label="fecha" aria-describedby="basic-addon1" required>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="hidden">
+                    <span class="input-group-text" id="basic-addon1">Permisos</span>
+                    <input type="text" name="permisos" class="form-control" value="1">
+                </div>
+            </div>
+
+            <button id="botonRegistro" type="submit" class="btn btn-primary btn-block">Registrarse</button>
+
+        </form>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    {{>footer}}
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.backtotop.js"></script>
+    <script src="assets/js/jquery.mobilemenu.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+</body>
+
+</html>

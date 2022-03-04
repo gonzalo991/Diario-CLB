@@ -1,0 +1,111 @@
+<!--Barra Superior  -->
+
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+
+    <!-- Menú Superior -->
+
+    <div class="fl_left">
+      <ul>
+        <li><i class="fa fa-phone"></i> {{celular}}</li>
+        <li><i class="fa fa-envelope-o"></i> {{email}}</li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul>
+        <li><a href="/"><i class="fa fa-lg fa-home"></i></a></li>
+        <li><a href="/login">Ingreso</a></li>
+        <li><a href="/registro">Registro</a></li>
+        <li><a href="/admin">Administrador</a></li>
+      </ul>
+    </div>
+    <!--Fin del menú superior -->
+  </div>
+</div>
+
+<!-- Fin de la barra superior -->
+
+
+<!-- Imagen de fondo superior -->
+
+<div class="bgded overlay" style="background-image:url('images/logocortalabocha.jpg');">
+
+  <!-- Fin de imagen de fondo superior -->
+
+  <!-- Inicio Header -->
+
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+
+      <!-- Inicio de Título -->
+
+      <div id="logo" class="fl_left">
+        <h1><a href="/">{{titulo}}</a></h1>
+      </div>
+
+      <!-- Fin de título -->
+
+      <!-- Inicio de navegador -->
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="/">Inicio</a></li>
+          <li><a class="drop" href="seccion.">Secciones</a>
+            <ul>
+              <li><a href="/noticias">Noticias</a></li>
+            </ul>
+          </li>
+          <li><a class="drop" href="servicios.">Servicios</a>
+            <ul>
+              <li><a href="/clima">Clima</a></li>
+            </ul>
+          </li>
+          <li><a href="/contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Fin del navegador -->
+
+    </header>
+
+    <!--Fin header-->
+
+  </div>
+
+  <!-- Inicio Carrusel de secciones -->
+
+  <div id="pageintro" class="hoc clear">
+    <div class="flexslider basicslider">
+      <ul class="slides">
+        <li>
+          <article>
+            <p>{{noticias}}</p>
+            <h3 class="heading">{{enterate}}</h3>
+            <p>{{info}}</p>
+            <footer><a class="btn" href="/noticias">Noticias</a></footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>{{ayudanos}}</p>
+            <h3 class="heading">{{nosinteresa}}</h3>
+            <p>{{entra}}</p>
+            <footer><a class="btn" href="/registro">{{articuloboton}}</a></footer>
+          </article>
+        </li>
+        <li>
+          <article>
+            <p>{{contanos}}</p>
+            <h3 class="heading">{{atentos}}</h3>
+            <p>{{contactate}}</p>
+            <footer><a class="btn" href="/contacto">{{contactoboton}}</a></footer>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Fin del carrusel de secciones -->
+
+  </div>
+</div>
+
+<!-- Fin de imagen de fondo superior -->

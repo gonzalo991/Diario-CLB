@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="assets/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/clima.css">
+    <title>{{cabecera}}</title>
+</head>
+
+<body id="top">
+
+    <!-- Header -->
+
+    {{>header}}
+
+    <!-- Inicio del Cuerpo de la Sección -->
+
+    <div id="contenedor-clima">
+
+        <div id="cuerpo-clima">
+
+            <div id="contenido-clima">
+
+                <div id="caja-1">
+                    <h1 id="temperatura-valor"></h1>
+                    <h2 id="temperatura-descripcion"></h2>
+                </div>
+
+                <div id="caja-2">
+                    <h2 id="ubicacion"></h2>
+                    <img id="icono-animado" src="" alt="" height="128" width="128">
+                </div>
+
+                <div id="caja-3">
+                    <h2>Velocidad Del Viento</h2>
+                    <h3 id="viento-velocidad"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    {{>footer}}
+
+    <script src="assets/js/clima.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.backtotop.js"></script>
+    <script src="assets/js/jquery.mobilemenu.js"></script>
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+</body>
+
+</html>
